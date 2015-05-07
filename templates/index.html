@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="jumbotron">
+        <h1>{{ title }}</h1>
+        <p>This is a Template</p>
+        <p><a class="btn btn-primary btn-lg" href="#">More Info >></a></p>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Hello</h2>
+            <p>This is an item</p>
+        </div>
+        <div class="col-md-4">
+             <h2>Hello</h2>
+             <p>This is an item</p>
+        </div>
+        <div class="col-md-4"></div>
+            <h2>Hello</h2>
+            <p>This is an item</p>
+        </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>hello</h2>
+            <p>This is a large item</p>
+        </div>
+        <div class="col-md-6">
+            <h2>hello</h2>
+            <p>This is a large item</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+<hr />
+{{ super() }}
+{% endblock %}
